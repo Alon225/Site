@@ -1,0 +1,8 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background-image: url("./Images/backgg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height:1000px;
+    background-size: cover;
+}

@@ -1,0 +1,219 @@
+body
+{
+  margin:50px;
+  padding:0;
+  display: transparent;
+  background-image: url("./Images/logmikael.png");
+    background-repeat: no-repeat;
+    width: 90%;
+    height:942px;
+    background-size: cover;
+  
+
+}
+
+#navl ul{
+  margin:20;
+  padding:40;
+  display: flex;
+
+}
+#navl ul li{
+
+  list-style:none;
+  transition: 0.9s;
+  margin-left:120px;
+  padding-bottom: 60px; 
+
+}
+#navl ul li a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding : 3px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+#navl ul:hover li a{
+transform: scale(2);
+  opacity: 0.2;
+  filter: blur(0.2px);
+
+}
+#navl ul li a:hover{
+  transform: scale(1.7);
+    opacity: 5;
+    filter: blur(0);
+}
+#navl ul li a:before
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: none;
+transition: transform 0.5s;
+transform-origin: right;
+transform: scaleX(0);
+z-index: -1;
+
+}
+#navl ul li a:hover:before{
+transition:transform 0.5s;
+transform-origin: right;
+transform: scaleX(1);
+}
+.box{
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 400px;
+padding: 40px;
+background: rgba(0, 0, 0, 0.8);
+box-sizing: border-box;
+box-shadow: : 0 15px 25px rgba(0,0,0,0.5);
+border-radius: 10px;
+}
+.box h2
+{
+margin: 0 0 30px;
+padding: 0;
+color: white;
+text-align: center;
+font-family: alon;
+}
+.box .inputBox{
+  position: relative;
+}
+.box .inputBox  input
+{
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+.box .inputBox label{
+position: absolute;
+top: 0;
+left: 0;
+letter-spacing: 1px;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+{
+top: -18px;
+left: 0;
+color: blue;
+font-size: 12px;
+}
+.box input[type="submit"]
+{
+background: transparent;
+border: none;
+outline: none;
+color: white;
+background: #808080;
+padding: 10px 20px;
+cursor:pointer;
+border-radius: 5px;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  transition: all 3.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.checked {
+  color: orange;
+
+}
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: black;
+  margin-top: 0px;
+
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  font-family: david;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
